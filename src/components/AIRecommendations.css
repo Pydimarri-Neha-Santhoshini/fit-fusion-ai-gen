@@ -1,0 +1,250 @@
+
+/* AIRecommendations.css */
+.ai-recommendations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #8b6363;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Form Styles */
+.form-container {
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  width: 200px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-group input,
+.form-group select {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.intensity-options {
+  display: flex;
+  gap: 10px;
+}
+
+.intensity-options span {
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.intensity-options span.selected {
+  background-color: #ea384c;
+  color: white;
+}
+
+.get-recommendations-btn {
+  background-color: #ea384c;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.get-recommendations-btn:hover {
+  background-color: #d1293d;
+}
+
+/* Recommendations Styles */
+.recommendations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.plan-card {
+  background-color: white;
+  color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.plan-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meal-plan {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.meal-column, .workout-column {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.meal-column h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ea384c;
+  font-weight: bold;
+}
+
+.meal-column ul, .workout-column ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.swap-btn {
+  background-color: #ea384c;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.workout-plan {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.difficulty {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-btn, .regenerate-btn {
+  background-color: #ea384c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.regenerate-btn {
+  background-color: #333;
+}
+
+.inline-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+  }
+  
+  .meal-plan, .workout-plan {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .meal-column, .workout-column {
+    margin: 0 0 15px 0;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
