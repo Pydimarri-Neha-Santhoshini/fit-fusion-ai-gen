@@ -1,6 +1,6 @@
+
 import React, { useState } from 'react';
 import './AIRecommendations.css';
-import Header from './Header';
 import RecommendationForm from './RecommendationForm';
 import Recommendations from './Recommendations';
 
@@ -63,7 +63,7 @@ const AIRecommendations = () => {
 
   return (
     <div className="ai-recommendations-container">
-      <Header />
+      <h1 className="main-title">AI Fitness Recommendations</h1>
       
       <RecommendationForm 
         fitnessGoal={fitnessGoal}
